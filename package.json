@@ -1,0 +1,30 @@
+{
+  "name": "wechat-emoji-parser",
+  "version": "1.0.0",
+  "description": "微信表情转换",
+  "keywords": [
+    "微信",
+    "wechat",
+    "表情",
+    "emoji"
+  ],
+  "scripts": {
+    "build": "node build/build.js",
+    "dev": "node build/dev.js"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/mingtianyihou33/wechat-emoji-parser.git",
+  "author": "mingtianyihou33 <liumingyi1428@126.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "ora": "^4.0.3",
+    "rollup": "^1.29.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}
