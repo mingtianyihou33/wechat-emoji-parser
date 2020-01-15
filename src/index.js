@@ -1,5 +1,6 @@
 import Trie from './trie'
 import emojiObj from './config/emoji'
+import emojiPanel from './config/emojiPanel'
 
 const emojiKeys = Object.keys(emojiObj)
 const trie = new Trie(emojiKeys)
@@ -8,16 +9,18 @@ function splice(str, index, count, add) {
   return str.slice(0, index) + add + str.slice(index + count);
 }
 
-let labelEmotion = `<a title="{{title}}" style="display: inline-block;background: url(https://res.wx.qq.com/a/wx_fed/webwx/res/static/img/6AfH8-r.png) no-repeat;width: 28px;
-    height: 28px; background-position:{{position}};"></a>`;
+function getPanelEmojiTemplate(title, position, panel) {
+  return `<a title="${title}" style="display: inline-block;background: url(${emojiPanel[panel]}) no-repeat;width: 28px;
+    height: 28px; background-position:${position};"></a>`
+}
 
 export default function emojiParser(str) {
   let matchedEmoji = trie.search(str);
   matchedEmoji.map((idx) => {
-    let pos = idx[0], emotion = emojiKeys[idx[1]];
-    let img = /^:.*:$|^\[.*\]$/.test(emotion)
-      ? labelEmotion.replace('{{title}}', emotion).replace('{{position}}', emojiObj[emotion])
-      : '<img src="' + emojiObj[emotion] + '" alt="' + emotion + '">'
+    let pos = idx[0], emotion = emojiKeys[idx[1]], emotionValue = emojiObj[emotion];
+    let img = typeof emotionValue === 'object'
+      ? getPanelEmojiTemplate(emotion, emotionValue.position, emotionValue.panel)
+      : '<img src="' + emotionValue + '" alt="' + emotion + '">'
     str = splice(str, pos, emotion.length, img);
   });
   return str;
