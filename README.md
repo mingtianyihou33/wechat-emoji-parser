@@ -21,9 +21,7 @@ yarn:
    ```
    "/::)":"https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/0.gif"
    ```
- - 或者添加表情面板(src/config/emojiPanel.json)
-`
-    然后在emoji.json中指出表情使用的面板名称和位置
-`
+- 或者添加表情面板(src/config/emojiPanel.json)
+  然后在emoji.json中指出表情使用的面板名称和位置
 
 ## 欢迎大家补充更多表情
