@@ -20,7 +20,9 @@ export default function emojiParser(str) {
     let pos = idx[0], emotion = emojiKeys[idx[1]], emotionValue = emojiObj[emotion];
     let img = typeof emotionValue === 'object'
       ? getPanelEmojiTemplate(emotion, emotionValue.position, emotionValue.panel)
-      : '<img src="' + emotionValue + '" alt="' + emotion + '">'
+      : emotionValue.indexOf('http') !== -1
+        ? '<img src="' + emotionValue + '" alt="' + emotion + '">'
+        : emotionValue
     str = splice(str, pos, emotion.length, img);
   });
   return str;
