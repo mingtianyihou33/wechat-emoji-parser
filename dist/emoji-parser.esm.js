@@ -247,89 +247,91 @@ var emojiObj = {
 	"/:skip": "https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/98.gif",
 	"/:oY": "https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/99.gif",
 	":smile:": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "2px 2px"
 },
 	":mask:": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-30px 2px"
 },
 	":joy:": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-62px 2px"
 },
 	":stuck_out_tongue_closed_eyes:": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-94px 2px"
 },
 	":flushed:": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-126px 2px"
 },
 	":scream:": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-158px 2px"
 },
 	":pensive:": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-190px 2px"
 },
 	":unamused:": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-222px 2px"
 },
 	"[Hey]": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-254px 2px"
 },
 	"[Facepalm]": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-286px 2px"
 },
 	"[Smirk]": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-318px 2px"
 },
 	"[Smart]": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-350px 2px"
 },
 	"[Concerned]": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-382px 2px"
 },
 	"[Yeah!]": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-414px 2px"
 },
 	":ghost:": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-446px 2px"
 },
 	":pray:": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "2px -30px"
 },
 	":muscle:": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-30px -30px"
 },
 	":tada:": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-62px -30px"
 },
 	":gift:": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-94px -30px"
 },
 	"[Packet]": {
-	panel: 1,
+	panel: "6AfH8",
 	position: "-126px -30px"
-}
+},
+	"[好的]": "👌",
+	"[加油]": "💪️"
 };
 
 var emojiPanel = {
-	"1": "https://res.wx.qq.com/a/wx_fed/webwx/res/static/img/6AfH8-r.png"
+	"6AfH8": "https://res.wx.qq.com/a/wx_fed/webwx/res/static/img/6AfH8-r.png"
 };
 
 var emojiKeys = Object.keys(emojiObj);
@@ -349,7 +351,7 @@ function emojiParser(str) {
     var pos = idx[0],
         emotion = emojiKeys[idx[1]],
         emotionValue = emojiObj[emotion];
-    var img = _typeof(emotionValue) === 'object' ? getPanelEmojiTemplate(emotion, emotionValue.position, emotionValue.panel) : '<img src="' + emotionValue + '" alt="' + emotion + '">';
+    var img = _typeof(emotionValue) === 'object' ? getPanelEmojiTemplate(emotion, emotionValue.position, emotionValue.panel) : emotionValue.indexOf('http') !== -1 ? '<img src="' + emotionValue + '" alt="' + emotion + '">' : emotionValue;
     str = splice(str, pos, emotion.length, img);
   });
   return str;
