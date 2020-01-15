@@ -10,16 +10,21 @@
   ],
   "scripts": {
     "build": "node build/build.js",
-    "dev": "node build/dev.js"
+    "test": "mocha --require @babel/register test/*.js"
   },
-  "main": "index.js",
+  "main": "dist/emoji-parser.common.js",
+  "module": "dist/emoji-parser.esm.js",
+  "unpkg": "dist/emoji-parser.js",
   "repository": "https://github.com/mingtianyihou33/wechat-emoji-parser.git",
   "author": "mingtianyihou33 <liumingyi1428@126.com>",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.8.3",
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.8.3",
+    "mocha": "^7.0.0",
     "ora": "^4.0.3",
     "rollup": "^1.29.0",
     "rollup-plugin-babel": "^4.3.3",
