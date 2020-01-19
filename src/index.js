@@ -16,7 +16,7 @@ function getPanelEmojiTemplate(title, position, panel) {
 
 export default function emojiParser(str) {
   let matchedEmoji = trie.search(str);
-  matchedEmoji.map((idx) => {
+  matchedEmoji.reverse().map((idx) => {
     let pos = idx[0], emotion = emojiKeys[idx[1]], emotionValue = emojiObj[emotion];
     let img = typeof emotionValue === 'object'
       ? getPanelEmojiTemplate(emotion, emotionValue.position, emotionValue.panel)

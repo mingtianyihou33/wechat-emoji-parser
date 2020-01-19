@@ -347,7 +347,7 @@ function getPanelEmojiTemplate(title, position, panel) {
 
 function emojiParser(str) {
   var matchedEmoji = trie.search(str);
-  matchedEmoji.map(function (idx) {
+  matchedEmoji.reverse().map(function (idx) {
     var pos = idx[0],
         emotion = emojiKeys[idx[1]],
         emotionValue = emojiObj[emotion];
