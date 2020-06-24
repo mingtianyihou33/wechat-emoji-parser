@@ -22,6 +22,22 @@ yarn:
    "/::)":"https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/0.gif"
    ```
 - 或者添加表情面板(src/config/emojiPanel.json)
-  然后在emoji.json中指出表情使用的面板名称和位置
+  然后在emoji.json中指出表情使用的面板名称和图标位置
+### emojiPanel.json API
+| 字段名        | 描述                   | 取值   |
+| ------------- | ---------------------- | ------ |
+| url           | emoji图片地址          | string |
+| width         | 图片的宽度             | number |
+| height        | 图片的高度             | number |
+| col           | 一行有多少个表情       | number |
+| row           | 一列有多少个表情       | number |
+| paddingTop    | 图片上面空白区域的高度 | number |
+| paddingBottom | 图片下面空白区域的高度 | number |
+| paddingLeft   | 图片左边空白区域的宽度 | number |
+| paddingRight  | 图片右边空白区域的宽度 | number |
+| gapCol        | 表情列与列之间的间距   | number |
+| gapRow        | 表情行与行之间的间距   | number |
+
+
 
 ## 欢迎大家补充更多表情

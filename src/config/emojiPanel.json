@@ -1,3 +1,29 @@
 {
-  "6AfH8": "https://res.wx.qq.com/a/wx_fed/webwx/res/static/img/6AfH8-r.png"
+  "xxx": "https://res.wx.qq.com/a/wx_fed/webwx/res/static/img/6AfH8-r.png",
+  "b5bd1fe0": {
+    "url": "https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png",
+    "width": 724,
+    "height": 658,
+    "col": 11,
+    "row": 10,
+    "paddingTop": 0,
+    "paddingBottom": 0,
+    "paddingLeft": 0,
+    "paddingRight": 0,
+    "gapCol": 6,
+    "gapRow": 6
+  },
+  "6AfH8": {
+    "url": "https://res.wx.qq.com/a/wx_fed/webwx/res/static/img/6AfH8-r.png",
+    "width": 480,
+    "height": 380,
+    "col": 15,
+    "row": 12,
+    "paddingTop": 0,
+    "paddingBottom": 0,
+    "paddingLeft": 0,
+    "paddingRight": 0,
+    "gapCol": 6,
+    "gapRow": 6
+  }
 }

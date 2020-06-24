@@ -247,102 +247,320 @@ var emojiObj = {
 	"/:skip": "https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/98.gif",
 	"/:oY": "https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/99.gif",
 	":smile:": {
-	panel: "6AfH8",
-	position: "2px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 11,
+		row: 3
+	}
 },
 	":mask:": {
-	panel: "6AfH8",
-	position: "-30px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 4,
+		row: 1
+	}
 },
 	":joy:": {
-	panel: "6AfH8",
-	position: "-62px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 11,
+		row: 2
+	}
 },
 	":stuck_out_tongue_closed_eyes:": {
-	panel: "6AfH8",
-	position: "-94px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 1,
+		row: 4
+	}
 },
 	":flushed:": {
-	panel: "6AfH8",
-	position: "-126px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 11,
+		row: 8
+	}
 },
 	":scream:": {
-	panel: "6AfH8",
-	position: "-158px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 11,
+		row: 7
+	}
 },
 	":pensive:": {
-	panel: "6AfH8",
-	position: "-190px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 11,
+		row: 5
+	}
 },
 	":unamused:": {
-	panel: "6AfH8",
-	position: "-222px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 11,
+		row: 4
+	}
 },
 	"[Hey]": {
-	panel: "6AfH8",
-	position: "-254px 2px"
-},
-	"[Facepalm]": {
-	panel: "6AfH8",
-	position: "-286px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 8,
+		row: 7
+	}
 },
 	"[Smirk]": {
-	panel: "6AfH8",
-	position: "-318px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 2,
+		row: 1
+	}
 },
 	"[Smart]": {
-	panel: "6AfH8",
-	position: "-350px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 2,
+		row: 2
+	}
 },
 	"[Concerned]": {
-	panel: "6AfH8",
-	position: "-382px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 1,
+		row: 3
+	}
 },
 	"[Yeah!]": {
-	panel: "6AfH8",
-	position: "-414px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 3,
+		row: 2
+	}
 },
 	":ghost:": {
-	panel: "6AfH8",
-	position: "-446px 2px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 10,
+		row: 10
+	}
 },
 	":pray:": {
-	panel: "6AfH8",
-	position: "2px -30px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 11,
+		row: 9
+	}
 },
 	":muscle:": {
-	panel: "6AfH8",
-	position: "-30px -30px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 11,
+		row: 1
+	}
 },
 	":tada:": {
-	panel: "6AfH8",
-	position: "-62px -30px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 9,
+		row: 10
+	}
 },
 	":gift:": {
-	panel: "6AfH8",
-	position: "-94px -30px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 8,
+		row: 10
+	}
 },
 	"[Packet]": {
-	panel: "6AfH8",
-	position: "-126px -30px"
+	panel: "b5bd1fe0",
+	position: {
+		col: 3,
+		row: 1
+	}
 },
-	"[好的]": "👌",
-	"[加油]": "💪️"
+	"[好的]": {
+	panel: "b5bd1fe0",
+	position: {
+		col: 7,
+		row: 5
+	}
+},
+	"[加油]": {
+	panel: "b5bd1fe0",
+	position: {
+		col: 4,
+		row: 6
+	}
+},
+	"[汗]": {
+	panel: "b5bd1fe0",
+	position: {
+		col: 5,
+		row: 6
+	}
+},
+	"[天啊]": {
+	panel: "b5bd1fe0",
+	position: {
+		col: 6,
+		row: 6
+	}
+},
+	"[Emm]": {
+	panel: "b5bd1fe0",
+	position: {
+		col: 7,
+		row: 1
+	}
+},
+	"[社会社会]": {
+	panel: "b5bd1fe0",
+	position: {
+		col: 7,
+		row: 2
+	}
+},
+	"[旺柴]": {
+	panel: "b5bd1fe0",
+	position: {
+		col: 7,
+		row: 3
+	}
+},
+	"[加油加油]": {
+	panel: "b5bd1fe0",
+	position: {
+		col: 4,
+		row: 6
+	}
+},
+	"[吃瓜]": {
+	panel: "b5bd1fe0",
+	position: {
+		col: 3,
+		row: 6
+	}
+},
+	"[Facepalm]": {
+	panel: "b5bd1fe0",
+	position: {
+		col: 1,
+		row: 2
+	}
+},
+	"[哇]": {
+	panel: "b5bd1fe0",
+	position: {
+		col: 1,
+		row: 7
+	}
+},
+	"[打脸]": {
+	panel: "b5bd1fe0",
+	position: {
+		col: 7,
+		row: 6
+	}
+},
+	"[囧]": {
+	panel: "b5bd1fe0",
+	position: {
+		col: 5,
+		row: 1
+	}
+}
 };
 
+var xxx = "https://res.wx.qq.com/a/wx_fed/webwx/res/static/img/6AfH8-r.png";
+var b5bd1fe0 = {
+	url: "https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png",
+	width: 724,
+	height: 658,
+	col: 11,
+	row: 10,
+	paddingTop: 0,
+	paddingBottom: 0,
+	paddingLeft: 0,
+	paddingRight: 0,
+	gapCol: 6,
+	gapRow: 6
+};
 var emojiPanel = {
-	"6AfH8": "https://res.wx.qq.com/a/wx_fed/webwx/res/static/img/6AfH8-r.png"
+	xxx: xxx,
+	b5bd1fe0: b5bd1fe0,
+	"6AfH8": {
+	url: "https://res.wx.qq.com/a/wx_fed/webwx/res/static/img/6AfH8-r.png",
+	width: 480,
+	height: 380,
+	col: 15,
+	row: 12,
+	paddingTop: 0,
+	paddingBottom: 0,
+	paddingLeft: 0,
+	paddingRight: 0,
+	gapCol: 6,
+	gapRow: 6
+}
 };
 
 var emojiKeys = Object.keys(emojiObj);
 var trie = new Trie(emojiKeys);
+var emojiWidth = 24,
+    emojiHeight = 24;
+var panelInfoCache = {};
 
 function splice(str, index, count, add) {
   return str.slice(0, index) + add + str.slice(index + count);
 }
 
-function getPanelEmojiTemplate(title, position, panel) {
-  return "<a title=\"".concat(title, "\" style=\"display: inline-block;background: url(").concat(emojiPanel[panel], ") no-repeat;width: 28px;\n    height: 28px; background-position:").concat(position, ";\"></a>");
+function calculatePanelInfo(panelId, panel) {
+  var url = panel.url,
+      width = panel.width,
+      height = panel.height,
+      col = panel.col,
+      row = panel.row,
+      paddingTop = panel.paddingTop,
+      paddingBottom = panel.paddingBottom,
+      paddingLeft = panel.paddingLeft,
+      paddingRight = panel.paddingRight,
+      gapCol = panel.gapCol,
+      gapRow = panel.gapRow;
+  if (!url) return ''; // 计算背景宽度应该缩放到多少
+  // 原图的emojiWidth
+
+  var imgEmojiWidth = (width - paddingLeft - paddingRight - gapCol * (col - 1)) / col; // bgWidth / width = emojiWidth / imgEmojiWidth 比例是相等的
+
+  var scale = emojiWidth / imgEmojiWidth;
+  var bgWidth = width * scale;
+  panelInfoCache[panelId] = {
+    scale: scale,
+    bgWidth: bgWidth
+  };
+  return panelInfoCache[panelId];
+}
+
+function getPanelEmojiTemplate(title, position, panelId) {
+  var panel = emojiPanel[panelId];
+  var url = panel.url,
+      gapCol = panel.gapCol,
+      gapRow = panel.gapRow;
+  if (!url) return '';
+
+  var _ref = panelInfoCache[panelId] || calculatePanelInfo(panelId, panel),
+      scale = _ref.scale,
+      bgWidth = _ref.bgWidth;
+
+  if (_typeof(position) === 'object') {
+    var _position = position,
+        targetCol = _position.col,
+        targetRow = _position.row;
+    var left = -(targetCol - 1) * (emojiWidth + scale * gapCol);
+    var top = -(targetRow - 1) * (emojiHeight + scale * gapRow);
+    position = "".concat(left, "px ").concat(top, "px");
+  }
+
+  return "<a title=\"".concat(title, "\" style=\"display: inline-block;background: url(").concat(url, ") no-repeat;width: ").concat(emojiWidth, "px;\n    height: ").concat(emojiHeight, "px; background-position:").concat(position, "; background-size: ").concat(bgWidth, "px;\"></a>");
 }
 
 function emojiParser(str) {
