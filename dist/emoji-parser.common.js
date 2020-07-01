@@ -40,9 +40,7 @@ function _createClass(Constructor, protoProps, staticProps) {
  * 字符查找树
  * @constructor
  */
-var Trie =
-/*#__PURE__*/
-function () {
+var Trie = /*#__PURE__*/function () {
   function Trie(keyArr) {
     _classCallCheck(this, Trie);
 
@@ -474,7 +472,6 @@ var emojiObj = {
 }
 };
 
-var xxx = "https://res.wx.qq.com/a/wx_fed/webwx/res/static/img/6AfH8-r.png";
 var b5bd1fe0 = {
 	url: "https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png",
 	width: 724,
@@ -489,7 +486,6 @@ var b5bd1fe0 = {
 	gapRow: 6
 };
 var emojiPanel = {
-	xxx: xxx,
 	b5bd1fe0: b5bd1fe0,
 	"6AfH8": {
 	url: "https://res.wx.qq.com/a/wx_fed/webwx/res/static/img/6AfH8-r.png",
