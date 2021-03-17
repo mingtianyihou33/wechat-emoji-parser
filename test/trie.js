@@ -1,5 +1,5 @@
 import assert from 'assert';
-import Trie from '../src/trie.js';
+import Trie from '../src/utils/trie.ts';
 
 describe('Trie', function () {
   describe("empty emotions: []", function () {
