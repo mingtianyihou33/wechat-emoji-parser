@@ -1802,6 +1802,11 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
+esbuild@^0.9.3:
+  version "0.9.3"
+  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.9.3.tgz#09293a0b824159c6aa2488d1c6c22f57d8448f74"
+  integrity sha512-G8k0olucZp3LJ7I/p8y388t+IEyb2Y78nHrLeIxuqZqh6TYqDYP/B/7drAvYKfh83CGwKal9txVP+FTypsPJug==
+
 escalade@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npm.taobao.org/escalade/download/escalade-3.0.1.tgz?cache=0&sync_timestamp=1593019423426&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fescalade%2Fdownload%2Fescalade-3.0.1.tgz#52568a77443f6927cd0ab9c73129137533c965ed"

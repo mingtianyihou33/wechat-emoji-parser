@@ -18,7 +18,7 @@ const inputOptions = {
   }),
     typescript({
       tsconfig: pathResolve('../tsconfig.json'),
-      cacheDir: path.resolve(__dirname, 'node_modules/.cache/.ts'),
+      cacheDir: path.resolve(__dirname, '../node_modules/.cache/.ts'),
     })]
 }
 const baseOutputOptions = {
