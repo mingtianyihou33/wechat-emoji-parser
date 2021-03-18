@@ -1,2 +1,2 @@
-export { configEmojiParser, emojiParser } from './parser'
+export { configParseEmoji, parseEmoji } from './parser'
 export { getEmojis } from './emoji'

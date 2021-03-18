@@ -17,7 +17,7 @@ const outputOptions = [
   {
     outfile: 'dist/emoji-parser.js',
     format: 'iife',
-    globalName: 'emojiParser',
+    globalName: 'parseEmoji',
   },
 ]
 const baseOption = {

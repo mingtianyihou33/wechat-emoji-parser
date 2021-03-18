@@ -1157,7 +1157,7 @@ var defaultEmojiOption = {
   tag: "a",
   emojiSpriteUrl: "https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png"
 };
-function emojiParser(str) {
+function parseEmoji(str) {
   if (!str)
     return str;
   let matchedEmoji = trie.search(str);
@@ -1168,7 +1168,7 @@ function emojiParser(str) {
   });
   return str;
 }
-function configEmojiParser(option) {
+function configParseEmoji(option) {
   if (option) {
     Object.assign(defaultEmojiOption, option);
   }
@@ -1192,7 +1192,7 @@ function getEmojisByEmojiData(emojiData) {
 }
 var getEmojis = getEmojisByEmojiData(EMOJI_DATA);
 export {
-  configEmojiParser,
-  emojiParser,
-  getEmojis
+  configParseEmoji,
+  getEmojis,
+  parseEmoji
 };

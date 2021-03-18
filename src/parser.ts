@@ -69,7 +69,7 @@ const defaultEmojiOption: EmojiParserOption = {
     'https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png',
 }
 
-export function emojiParser(str: string): string {
+export function parseEmoji(str: string): string {
   if (!str) return str
   let matchedEmoji = trie.search(str)
   matchedEmoji.reverse().map(([emojiIndex, keyIndex]) => {
@@ -81,7 +81,7 @@ export function emojiParser(str: string): string {
   return str
 }
 
-export function configEmojiParser(option: EmojiParserOption | undefined) {
+export function configParseEmoji(option: EmojiParserOption | undefined) {
   if (option) {
     Object.assign(defaultEmojiOption, option)
   }

@@ -25,8 +25,8 @@
 <script setup>
 import {
   getEmojis,
-  emojiParser,
-  configEmojiParser,
+  parseEmoji,
+  configParseEmoji,
 } from '../../../../dist/emoji-parser.esm'
 import { reactive, ref } from 'vue'
 
@@ -41,9 +41,9 @@ function selectEmoji(emojiStr) {
   inputVal.value += emojiStr
 }
 
-configEmojiParser({ size: 30 })
+configParseEmoji({ size: 30 })
 function transform() {
-  outputVal.value = emojiParser(inputVal.value)
+  outputVal.value = parseEmoji(inputVal.value)
 }
 </script>
 

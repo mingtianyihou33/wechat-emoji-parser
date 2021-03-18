@@ -1,4 +1,4 @@
-var emojiParser = (() => {
+var parseEmoji = (() => {
   var __defProp = Object.defineProperty;
   var __export = (target, all) => {
     for (var name in all)
@@ -8,9 +8,9 @@ var emojiParser = (() => {
   // src/index.ts
   var src_exports = {};
   __export(src_exports, {
-    configEmojiParser: () => configEmojiParser,
-    emojiParser: () => emojiParser,
-    getEmojis: () => getEmojis
+    configParseEmoji: () => configParseEmoji,
+    getEmojis: () => getEmojis,
+    parseEmoji: () => parseEmoji
   });
 
   // src/utils/trie.ts
@@ -1172,7 +1172,7 @@ var emojiParser = (() => {
     tag: "a",
     emojiSpriteUrl: "https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png"
   };
-  function emojiParser(str) {
+  function parseEmoji(str) {
     if (!str)
       return str;
     let matchedEmoji = trie.search(str);
@@ -1183,7 +1183,7 @@ var emojiParser = (() => {
     });
     return str;
   }
-  function configEmojiParser(option) {
+  function configParseEmoji(option) {
     if (option) {
       Object.assign(defaultEmojiOption, option);
     }
