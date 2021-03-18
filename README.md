@@ -2,7 +2,7 @@
 
 微信表情解析工具，可以实现表情解析和表情发送功能
 
-- 可用于公众号接收用户表情消息，将表情码转换为对应的表情html 内容
+- 可用于公众号接收用户表情消息，将表情码转换为对应的表情 html 内容
 - 还可以获取聊天表情，可以应用于聊天应用的表情
 
 ## install（安装）
@@ -24,8 +24,8 @@ yarn add wechat-emoji-parser
 #### getEmojis：获取表情
 
 ```js
-import {getEmojis} from 'wechat-emoji-parser'
-let emojis = getEmojis({size: 24})
+import { getEmojis } from 'wechat-emoji-parser'
+let emojis = getEmojis({ size: 24 })
 /*emojis
 [
   {
@@ -46,47 +46,47 @@ let emojis = getEmojis({size: 24})
 
 1. 输入：option: {size: number, emojiSpriteUrl: string}
 
-   | 属性名         | 类型   | 默认值                                                       | 说明                                                         |
-| -------------- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-   | size           | number | 64                                                           | emoji 大小，单位px                                           |
-   | emojiSpriteUrl | string | https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png | 雪碧图文件路径,为了避免链接失效，最好将src/assets/emoji-sprite.png中的文件上传自己的cdn，然后设置为对应的资源路径 |
+   | 属性名         | 类型   | 默认值                                                                | 说明                                                                                                                 |
+   | -------------- | ------ | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+   | size           | number | 64                                                                    | emoji 大小，单位 px                                                                                                  |
+   | emojiSpriteUrl | string | https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png | 雪碧图文件路径,为了避免链接失效，最好将 src/assets/emoji-sprite.png 中的文件上传自己的 cdn，然后设置为对应的资源路径 |
 
-2. 输出emojis: [
-    {
-     code: string,
-     cn: string,
-     style: {
-      ​	display: string
-      ​	background: string
-      ​	width: string
-      ​	height: string
-      ​	'background-position': string
-      ​	'background-size': string
-    }
+2. 输出 emojis: [
+   {
+   code: string,
+   cn: string,
+   style: {
+   ​ display: string
+   ​ background: string
+   ​ width: string
+   ​ height: string
+   ​ 'background-position': string
+   ​ 'background-size': string
+   }
 
- }]
+}]
 
-| 属性名 | 类型   | 默认值 | 说明                      |
-| ------ | ------ | ------ | ------------------------- |
-| code   | string |        | emoji对应的编码，如：/:@> |
-| cn     | string |        | 中文显示，如：[右哼哼]    |
-| style  | Object |        |                           |
+| 属性名 | 类型   | 默认值 | 说明                       |
+| ------ | ------ | ------ | -------------------------- |
+| code   | string |        | emoji 对应的编码，如：/:@> |
+| cn     | string |        | 中文显示，如：[右哼哼]     |
+| style  | Object |        |                            |
 
-#### parseEmoji解析表情
+#### parseEmoji 解析表情
 
 ```js
-import {parseEmoji, configParseEmoji} from 'wechat-emoji-parser'
+import { parseEmoji, configParseEmoji } from 'wechat-emoji-parser'
 configParseEmoji({ size: 30 }) // 设置一些参数
-const res = parseEmoji("哈哈[西瓜]") // 解析文本
+const res = parseEmoji('哈哈[西瓜]') // 解析文本
 ```
 
 - configParseEmoji(option: object) 配置解析规则
 
-  | 属性名         | 类型   | 默认值                                                       | 说明                                                         |
-  | -------------- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-  | size           | number | 64                                                           | emoji 大小，单位px                                           |
-  | emojiSpriteUrl | string | https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png | 雪碧图文件路径,为了避免链接失效，最好将src/assets/emoji-sprite.png中的文件上传自己的cdn，然后设置为对应的资源路径 |
-  | tag            | string | 'a'                                                          | 解析后的html标签                                             |
+  | 属性名         | 类型   | 默认值                                                                | 说明                                                                                                                 |
+  | -------------- | ------ | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+  | size           | number | 64                                                                    | emoji 大小，单位 px                                                                                                  |
+  | emojiSpriteUrl | string | https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png | 雪碧图文件路径,为了避免链接失效，最好将 src/assets/emoji-sprite.png 中的文件上传自己的 cdn，然后设置为对应的资源路径 |
+  | tag            | string | 'a'                                                                   | 解析后的 html 标签                                                                                                   |
 
 - parseEmoji(str: string)
 
@@ -96,4 +96,4 @@ const res = parseEmoji("哈哈[西瓜]") // 解析文本
 
 ### example
 
-- (vue项目使用案例)[]
+- (vue 项目使用案例)[]

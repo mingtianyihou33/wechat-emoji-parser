@@ -37,6 +37,7 @@ const outputVal = ref('')
 function inputChange(e) {
   inputVal.value = e.target.value
 }
+
 function selectEmoji(emojiStr) {
   inputVal.value += emojiStr
 }
@@ -68,6 +69,10 @@ function transform() {
 .emoji-out {
   display: inline-block;
   margin-left: 20px;
+}
+.emoji-input {
+  width: 200px;
+  height: 20px;
 }
 .emoji-input {
   width: 200px;
