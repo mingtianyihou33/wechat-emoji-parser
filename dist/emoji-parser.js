@@ -8,8 +8,9 @@ var emojiParser = (() => {
   // src/index.ts
   var src_exports = {};
   __export(src_exports, {
+    configEmojiParser: () => configEmojiParser,
     emojiParser: () => emojiParser,
-    initEmojiParser: () => initEmojiParser
+    getEmojis: () => getEmojis
   });
 
   // src/utils/trie.ts
@@ -1123,11 +1124,6 @@ var emojiParser = (() => {
   // src/parser.ts
   var emojiKeys = Object.keys(EMOJI_KEY_POSITION);
   var trie = new trie_default(emojiKeys);
-  var emojiOption = {
-    size: 64,
-    tag: "a",
-    emojiSpriteUrl: "https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png"
-  };
   var panelScaleCache = {};
   function calculateScaleAndBgSize(panel, emojiSize) {
     if (panelScaleCache[emojiSize])
@@ -1139,11 +1135,10 @@ var emojiParser = (() => {
     panelScaleCache[emojiSize] = {scale, bgSize};
     return panelScaleCache[emojiSize];
   }
-  function transform2Html(name, position, emojiOption2) {
+  function getEmojiStyle(position, emojiOption) {
     let {gapX, gapY} = EMOJI_PANEL;
-    const emojiSize = emojiOption2.size;
-    const url = emojiOption2.emojiSpriteUrl;
-    const tag = emojiOption2.tag;
+    const emojiSize = emojiOption.size;
+    const url = emojiOption.emojiSpriteUrl;
     let {scale, bgSize} = calculateScaleAndBgSize(EMOJI_PANEL, emojiSize);
     let bgPosition = "";
     if (position) {
@@ -1152,23 +1147,64 @@ var emojiParser = (() => {
       let top = -(y * (emojiSize + scale * gapY)).toFixed(2);
       bgPosition = `${left}px ${top}px`;
     }
-    return `<${tag} title="${name}" class="wx-emoji" style="display: inline-block;background: url(${url}) no-repeat; width: ${emojiSize}px; height: ${emojiSize}px; background-position:${bgPosition}; background-size: ${bgSize}px;"></${tag}>`;
+    return {
+      display: "inline-block",
+      background: `url(${url}) no-repeat`,
+      width: `${emojiSize}px`,
+      height: `${emojiSize}px`,
+      "background-position": `${bgPosition}`,
+      "background-size": `${bgSize}px`
+    };
   }
+  function transform2Html(name, position, emojiOption) {
+    const tag = emojiOption.tag;
+    let style = "";
+    let styleObj = getEmojiStyle(position, emojiOption);
+    if (styleObj) {
+      Object.keys(styleObj).forEach((key) => {
+        styleObj[key] !== void 0 && (style += `${key}: ${styleObj[key]};`);
+      });
+    }
+    return `<${tag} title="${name}" class="wx-emoji" style="${style}"></${tag}>`;
+  }
+  var defaultEmojiOption = {
+    size: 64,
+    tag: "a",
+    emojiSpriteUrl: "https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png"
+  };
   function emojiParser(str) {
     if (!str)
       return str;
     let matchedEmoji = trie.search(str);
     matchedEmoji.reverse().map(([emojiIndex, keyIndex]) => {
       let name = emojiKeys[keyIndex], position = EMOJI_KEY_POSITION[name];
-      let html = transform2Html(name, position, emojiOption);
+      let html = transform2Html(name, position, defaultEmojiOption);
       str = stringSplice(str, emojiIndex, name.length, html);
     });
     return str;
   }
-  function initEmojiParser(option) {
+  function configEmojiParser(option) {
     if (option) {
-      Object.assign(emojiOption, option);
+      Object.assign(defaultEmojiOption, option);
     }
   }
+
+  // src/emoji.ts
+  function getEmojisByEmojiData(emojiData) {
+    return function(option) {
+      let emojiOption = {
+        size: 64,
+        emojiSpriteUrl: "https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png"
+      };
+      if (option) {
+        emojiOption = Object.assign(emojiOption, option);
+      }
+      return emojiData.map(({position, code, cn}) => {
+        let style = position && getEmojiStyle(position, emojiOption) || {};
+        return {style, code, cn};
+      });
+    };
+  }
+  var getEmojis = getEmojisByEmojiData(EMOJI_DATA);
   return src_exports;
 })();
