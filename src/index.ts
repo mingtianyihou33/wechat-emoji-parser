@@ -1,1 +1,1 @@
-export {initEmojiParser, emojiParser} from './parser'
+export { initEmojiParser, emojiParser } from './parser'

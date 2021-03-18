@@ -13,7 +13,7 @@
   "scripts": {
     "build": "node build/build.js",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "test": "mocha --require @babel/register test/*.js",
+    "test": "jest",
     "prettier": "prettier --write ."
   },
   "main": "dist/emoji-parser.common.js",
@@ -22,13 +22,18 @@
   "repository": "https://github.com/mingtianyihou33/wechat-emoji-parser.git",
   "author": "mingtianyihou33 <liumingyi1428@126.com>",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^26.0.21",
+    "babel-jest": "^26.6.3",
     "conventional-changelog-cli": "^2.0.34",
     "esbuild": "^0.9.3",
     "husky": "^5.1.3",
+    "jest": "^26.6.3",
     "lint-staged": "^10.5.4",
-    "mocha": "^7.0.0",
     "ora": "^4.0.3",
     "prettier": "^2.2.1",
     "typescript": "^4.2.3"

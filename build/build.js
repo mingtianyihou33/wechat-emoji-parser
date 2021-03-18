@@ -1,6 +1,7 @@
 const path = require('path')
 const esBuild = require('esbuild')
 const ora = require('ora')
+const fs = require('fs')
 function pathResolve(dir) {
   return path.resolve(__dirname, '.', dir)
 }
@@ -16,30 +17,35 @@ const outputOptions = [
   {
     outfile: 'dist/emoji-parser.js',
     format: 'iife',
-    globalName: 'emojiParser'
-  }
+    globalName: 'emojiParser',
+  },
 ]
 const baseOption = {
   entryPoints: [pathResolve('../src/index.ts')],
   bundle: true,
   treeShaking: true,
+  loader: { '.png': 'file' },
   // minify: true,
 }
 
-function build (){
+function build() {
   const oraRet = ora('start build...')
   oraRet.start()
+  fs.existsSync('dist') &&
+    fs.rmdirSync('dist', { recursive: true, force: true })
   let tasks = []
   for (let i = 0; i < outputOptions.length; i++) {
-    tasks.push(esBuild.build({...baseOption,...outputOptions[i] }))
+    tasks.push(esBuild.build({ ...baseOption, ...outputOptions[i] }))
   }
-  Promise.all(tasks).then(()=>{
-    oraRet.succeed('build success!')
-  }).catch((e) => {
-    console.error(e)
-    oraRet.fail('build fail!')
-    process.exit(1)
-  })
+  Promise.all(tasks)
+    .then(() => {
+      oraRet.succeed('build success!')
+    })
+    .catch((e) => {
+      console.error(e)
+      oraRet.fail('build fail!')
+      process.exit(1)
+    })
 }
 
 build()

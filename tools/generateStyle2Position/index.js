@@ -1,6 +1,5 @@
 const fs = require('fs')
 
-
 /**
  * return
  * {
@@ -67,24 +66,39 @@ function compilerCss2Object(str) {
 }
 
 function generatePosition(data, cssObj) {
-  let bpArr = ['0', '-66px', '-132px', '-198px', '-264px', '-330px', '-396px', '-462px', '-528px', '-594px', '-660px']
-  return data.map(({style, ...res}) => {
-    let bp = cssObj?.[style]?.['background-position']
-    bp && (bp = bp.split(' '))
-    let position = {x: 1, y: 1}
-    if (bp && bp.length === 2) {
-      position.x = bpArr.indexOf(bp[0])
-      position.y = bpArr.indexOf(bp[1])
-      return {position, ...res}
-    }
-    return {style, ...res}
-  }).filter(item => item.position)
-    .sort(({position: {x: x1, y: y1}}, {position: {x: x2, y: y2}})=>{
-    return y1 === y2 ? (x1 - x2): (y1-y2)
-  }).map((item, i)=> ({...item, id: i})) // 按排序重置id
+  let bpArr = [
+    '0',
+    '-66px',
+    '-132px',
+    '-198px',
+    '-264px',
+    '-330px',
+    '-396px',
+    '-462px',
+    '-528px',
+    '-594px',
+    '-660px',
+  ]
+  return data
+    .map(({ style, ...res }) => {
+      let bp = cssObj?.[style]?.['background-position']
+      bp && (bp = bp.split(' '))
+      let position = { x: 1, y: 1 }
+      if (bp && bp.length === 2) {
+        position.x = bpArr.indexOf(bp[0])
+        position.y = bpArr.indexOf(bp[1])
+        return { position, ...res }
+      }
+      return { style, ...res }
+    })
+    .filter((item) => item.position)
+    .sort(({ position: { x: x1, y: y1 } }, { position: { x: x2, y: y2 } }) => {
+      return y1 === y2 ? x1 - x2 : y1 - y2
+    })
+    .map((item, i) => ({ ...item, id: i })) // 按排序重置id
 }
 
-function build(){
+function build() {
   const ora = require('ora')
   const oraInstance = ora('start build...')
   oraInstance.start('start build...')
@@ -92,12 +106,12 @@ function build(){
     const css = fs.readFileSync('./input/style.css')
     const inputData = require('./input/data')
     const res = generatePosition(inputData, compilerCss2Object(css.toString()))
-    if(!fs.existsSync('dist')){
+    if (!fs.existsSync('dist')) {
       fs.mkdirSync('dist')
     }
     fs.writeFileSync('./dist/data.json', JSON.stringify(res))
     oraInstance.succeed('build success')
-  }catch (e){
+  } catch (e) {
     oraInstance.fail(e.message)
   }
 }
