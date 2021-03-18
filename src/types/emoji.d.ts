@@ -27,5 +27,20 @@ declare interface EmojiData {
 declare interface EmojiParserOption {
   size?: number // emoji 大小，单位px 默认64
   tag?: string // 解析后的html标签，默认a
-  emojiSpriteUrl?: string // 雪碧图文件路径
+  emojiSpriteUrl?: string // 雪碧图文件路径，默认是：https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png，为了避免链接失效带来的影像，最好将src/assets/emoji-sprite.png中的文件上传自己的cdn，然后把路径传入
+}
+
+declare interface EmojiStyle {
+  display: string
+  background: string
+  width: string
+  height: string
+  'background-position': string
+  'background-size': string
+}
+
+declare interface Emoji {
+  code: string // emoji对应的编码，如：/:@>
+  cn: string // 中文显示，如：[右哼哼]
+  style: EmojiStyle
 }

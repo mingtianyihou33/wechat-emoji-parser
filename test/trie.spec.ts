@@ -48,7 +48,7 @@ describe('Trie', function () {
       expect(trie.search('abab')).toEqual([[0, 0]])
     })
     test('should return [[0, 0]] for "ababa"', function () {
-      expect(trie.search('ababa')).toEqual( [[0, 0]])
+      expect(trie.search('ababa')).toEqual([[0, 0]])
     })
   })
 
@@ -58,10 +58,10 @@ describe('Trie', function () {
       trie.build(['/::)', '/::('])
     })
     test('should return [[1, 0]] for "//::)/::x"', function () {
-      expect(trie.search('//::)/::x')).toEqual( [[1, 0]])
+      expect(trie.search('//::)/::x')).toEqual([[1, 0]])
     })
     test('should return [[3, 1]] for "/::/::("', function () {
-      expect(trie.search('/::/::(')).toEqual( [[3, 1]])
+      expect(trie.search('/::/::(')).toEqual([[3, 1]])
     })
     test('should return [[0, 0], [4, 0], [8, 0]] for "/::)/::)/::)"', function () {
       expect(trie.search('/::)/::)/::)')).toEqual([
@@ -79,15 +79,14 @@ describe('Trie', function () {
     })
     test('should return [[14, 0], [37, 1]] for "I love gungou /::), and I fuck gungou/:<L>."', function () {
       expect(
-        trie.search('I love gungou /::), and I fuck gungou/:<L>.')).toEqual(
-        [
-          [14, 0],
-          [37, 1],
-        ],
-      )
+        trie.search('I love gungou /::), and I fuck gungou/:<L>.'),
+      ).toEqual([
+        [14, 0],
+        [37, 1],
+      ])
     })
     test('should return [[0, 0], [4, 0]] for "/::)/::)"', function () {
-      expect(trie.search('/::)/::)')).toEqual( [
+      expect(trie.search('/::)/::)')).toEqual([
         [0, 0],
         [4, 0],
       ])

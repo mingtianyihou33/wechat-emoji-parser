@@ -4,12 +4,6 @@ import { stringSplice } from './utils/uitl'
 
 const emojiKeys = Object.keys(EMOJI_KEY_POSITION)
 const trie = new Trie(emojiKeys)
-const emojiOption: EmojiParserOption = {
-  size: 64,
-  tag: 'a',
-  emojiSpriteUrl:
-    'https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png',
-}
 
 let panelScaleCache: { [key in number]: { scale: number; bgSize: number } } = {}
 
@@ -27,15 +21,13 @@ function calculateScaleAndBgSize(
   return panelScaleCache[emojiSize]
 }
 
-export function transform2Html(
-  name: string,
+export function getEmojiStyle(
   position: EmojiData['position'],
   emojiOption: EmojiParserOption,
-): string {
+): EmojiStyle {
   let { gapX, gapY } = EMOJI_PANEL
   const emojiSize = emojiOption.size as number
   const url = emojiOption.emojiSpriteUrl as string
-  const tag = emojiOption.tag as string
   let { scale, bgSize } = calculateScaleAndBgSize(EMOJI_PANEL, emojiSize)
   let bgPosition = ''
   if (position) {
@@ -44,7 +36,37 @@ export function transform2Html(
     let top = -(y * (emojiSize + scale * gapY)).toFixed(2)
     bgPosition = `${left}px ${top}px`
   }
-  return `<${tag} title="${name}" class="wx-emoji" style="display: inline-block;background: url(${url}) no-repeat; width: ${emojiSize}px; height: ${emojiSize}px; background-position:${bgPosition}; background-size: ${bgSize}px;"></${tag}>`
+  return {
+    display: 'inline-block',
+    background: `url(${url}) no-repeat`,
+    width: `${emojiSize}px`,
+    height: `${emojiSize}px`,
+    'background-position': `${bgPosition}`,
+    'background-size': `${bgSize}px`,
+  }
+}
+
+export function transform2Html(
+  name: string,
+  position: EmojiData['position'],
+  emojiOption: EmojiParserOption,
+): string {
+  const tag = emojiOption.tag as string
+  let style = ''
+  let styleObj = getEmojiStyle(position, emojiOption)
+  if (styleObj) {
+    Object.keys(styleObj).forEach((key: keyof EmojiStyle) => {
+      styleObj[key] !== undefined && (style += `${key}: ${styleObj[key]};`)
+    })
+  }
+  return `<${tag} title="${name}" class="wx-emoji" style="${style}"></${tag}>`
+}
+
+const defaultEmojiOption: EmojiParserOption = {
+  size: 64,
+  tag: 'a',
+  emojiSpriteUrl:
+    'https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png',
 }
 
 export function emojiParser(str: string): string {
@@ -53,14 +75,14 @@ export function emojiParser(str: string): string {
   matchedEmoji.reverse().map(([emojiIndex, keyIndex]) => {
     let name = emojiKeys[keyIndex],
       position = EMOJI_KEY_POSITION[name]
-    let html = transform2Html(name, position, emojiOption)
+    let html = transform2Html(name, position, defaultEmojiOption)
     str = stringSplice(str, emojiIndex, name.length, html)
   })
   return str
 }
 
-export function initEmojiParser(option: EmojiParserOption | undefined) {
+export function configEmojiParser(option: EmojiParserOption | undefined) {
   if (option) {
-    Object.assign(emojiOption, option)
+    Object.assign(defaultEmojiOption, option)
   }
 }
