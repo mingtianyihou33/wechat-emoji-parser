@@ -14,18 +14,20 @@ describe('emoji', function () {
       },
     ]
     const option = { emojiSpriteUrl: 'http://xxx.png', size: 64 }
-    expect(getEmojisByEmojiData(emojiData)(option)).toEqual([{
-      cn: '[右哼哼]',
-      code: '/:@>',
-      style: {
-        background: 'url(http://xxx.png) no-repeat',
-        'background-position': '0px 0px',
-        'background-size': '767.61px',
-        display: 'inline-block',
-        height: '64px',
-        width: '64px',
+    expect(getEmojisByEmojiData(emojiData)(option)).toEqual([
+      {
+        cn: '[右哼哼]',
+        code: '/:@>',
+        style: {
+          background: 'url(http://xxx.png) no-repeat',
+          'background-position': '0px 0px',
+          'background-size': '767.61px',
+          display: 'inline-block',
+          height: '64px',
+          width: '64px',
+        },
       },
-    }])
+    ])
   })
   test('input nothing should return correct style property in the result', () => {
     const option = { emojiSpriteUrl: 'http://xxx.png', size: 64 }

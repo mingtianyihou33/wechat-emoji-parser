@@ -47,6 +47,9 @@
     "*.js": [
       "prettier --write"
     ],
+    "*.vue": [
+      "prettier --write"
+    ],
     "*.ts?(x)": [
       "prettier --parser=typescript --write"
     ]

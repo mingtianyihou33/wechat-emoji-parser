@@ -18,4 +18,4 @@ export function getEmojisByEmojiData(emojiData: EmojiData[]) {
   }
 }
 
-export const getEmojis =  getEmojisByEmojiData(EMOJI_DATA)
+export const getEmojis = getEmojisByEmojiData(EMOJI_DATA)
