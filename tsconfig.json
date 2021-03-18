@@ -3,7 +3,6 @@
     "target": "es2016",
     "module": "esnext",
     "moduleResolution": "node",
-    "tsBuildInfoFile": "./dist",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,

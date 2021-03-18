@@ -1,54 +1,45 @@
-const json = require('@rollup/plugin-json')
-const {nodeResolve} = require('@rollup/plugin-node-resolve')
-const commonjs = require('@rollup/plugin-commonjs')
-const babel = require('@rollup/plugin-babel')
-const typescript = require('@rollup/plugin-typescript')
 const path = require('path')
-
+const esBuild = require('esbuild')
+const ora = require('ora')
 function pathResolve(dir) {
   return path.resolve(__dirname, '.', dir)
 }
-
-const rollup = require('rollup')
-const inputOptions = {
-  input: 'src/index.ts',
-  plugins: [json(), nodeResolve(), commonjs(), babel.babel({
-    exclude: 'node_modules/**', // only transpile our source code
-    babelHelpers: 'bundled'
-  }),
-    typescript({
-      tsconfig: pathResolve('../tsconfig.json'),
-      cacheDir: path.resolve(__dirname, '../node_modules/.cache/.ts'),
-    })]
-}
-const baseOutputOptions = {
-  sourcemap: false,
-}
 const outputOptions = [
-  // {
-  //   // file: 'dist/emoji-parser.esm.js',
-  //   format: 'es',
-  //   dir: 'dist',
-  // },
-  // {
-  //   // file: 'dist/emoji-parser.common.js',
-  //   format: 'cjs',
-  //   dir: 'dist',
-  // },
   {
-    // file: 'dist/emoji-parser.js',
-    format: 'umd',
-    name: 'emojiParser',
-    dir: 'dist',
+    outfile: 'dist/emoji-parser.esm.js',
+    format: 'esm',
+  },
+  {
+    outfile: 'dist/emoji-parser.common.js',
+    format: 'cjs',
+  },
+  {
+    outfile: 'dist/emoji-parser.js',
+    format: 'iife',
+    globalName: 'emojiParser'
   }
 ]
+const baseOption = {
+  entryPoints: [pathResolve('../src/index.ts')],
+  bundle: true,
+  treeShaking: true,
+  // minify: true,
+}
 
-async function build() {
-  const bundle = await rollup.rollup(inputOptions)
-  outputOptions.forEach(async option => {
-    await bundle.write({...baseOutputOptions, ...option})
+function build (){
+  const oraRet = ora('start build...')
+  oraRet.start()
+  let tasks = []
+  for (let i = 0; i < outputOptions.length; i++) {
+    tasks.push(esBuild.build({...baseOption,...outputOptions[i] }))
+  }
+  Promise.all(tasks).then(()=>{
+    oraRet.succeed('build success!')
+  }).catch((e) => {
+    console.error(e)
+    oraRet.fail('build fail!')
+    process.exit(1)
   })
-  await bundle.close();
 }
 
 build()
