@@ -96,4 +96,4 @@ const res = parseEmoji('哈哈[西瓜]') // 解析文本
 
 ### example
 
-- [vue 项目使用案例](./example/vue-example)
+- [vue 项目使用案例](./examples/vue-example)
