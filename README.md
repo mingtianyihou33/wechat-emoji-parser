@@ -21,7 +21,7 @@ yarn add wechat-emoji-parser
 
 ## How to use（使用）
 
-#### getEmojis：获取表情
+#### getEmojis(option)：获取表情
 
 ```js
 import { getEmojis } from 'wechat-emoji-parser'
@@ -72,7 +72,7 @@ let emojis = getEmojis({ size: 24 })
 | cn     | string |        | 中文显示，如：[右哼哼]     |
 | style  | Object |        |                            |
 
-#### parseEmoji 解析表情
+#### parseEmoji(str) 解析表情
 
 ```js
 import { parseEmoji, configParseEmoji } from 'wechat-emoji-parser'
@@ -96,4 +96,4 @@ const res = parseEmoji('哈哈[西瓜]') // 解析文本
 
 ### example
 
-- (vue 项目使用案例)[]
+- [vue 项目使用案例](./example/vue-example)
