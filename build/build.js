@@ -25,7 +25,7 @@ const baseOption = {
   bundle: true,
   treeShaking: true,
   loader: { '.png': 'file' },
-  // minify: true,
+  minify: true,
 }
 
 function build() {
