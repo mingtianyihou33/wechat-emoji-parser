@@ -31,6 +31,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
   test-build:
+    needs: cache-and-install
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -38,7 +39,7 @@ jobs:
       - run: pnpm run build
 
   publish-npm:
-    needs: build
+    needs: test-build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
