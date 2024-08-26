@@ -1,3 +1,4 @@
+import { describe, expect, test, beforeEach } from 'vitest'
 import Trie from '../src/utils/trie'
 
 describe('Trie', function () {

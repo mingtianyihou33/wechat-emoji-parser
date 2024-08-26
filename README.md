@@ -32,7 +32,7 @@ let emojis = getEmojis({ size: 24 })
     cn: "[右哼哼]"
     code: "/:@>"
     style:{
-            background: "url(https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png) no-repeat"
+            background: "url(...) no-repeat"
             background-position: "0px 0px"
             background-size: "599.7px"
             display: "inline-block"
@@ -49,7 +49,7 @@ let emojis = getEmojis({ size: 24 })
    | 属性名         | 类型   | 默认值                                                                | 说明                                                                                                                 |
    | -------------- | ------ | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
    | size           | number | 64                                                                    | emoji 大小，单位 px                                                                                                  |
-   | emojiSpriteUrl | string | https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png | 雪碧图文件路径,为了避免链接失效，最好将 src/assets/emoji-sprite.png 中的文件上传自己的 cdn，然后设置为对应的资源路径 |
+   | emojiSpriteUrl | string | ./src/assets/emoji-sprite.png |  |
 
 2. 输出 emojis: [
    {
@@ -85,7 +85,7 @@ const res = parseEmoji('哈哈[西瓜]') // 解析文本
   | 属性名         | 类型   | 默认值                                                                | 说明                                                                                                                 |
   | -------------- | ------ | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
   | size           | number | 64                                                                    | emoji 大小，单位 px                                                                                                  |
-  | emojiSpriteUrl | string | https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png | 雪碧图文件路径,为了避免链接失效，最好将 src/assets/emoji-sprite.png 中的文件上传自己的 cdn，然后设置为对应的资源路径 |
+  | emojiSpriteUrl | string | ./src/assets/emoji-sprite.png |  |
   | tag            | string | 'a'                                                                   | 解析后的 html 标签                                                                                                   |
 
 - parseEmoji(str: string)

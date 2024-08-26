@@ -1,3 +1,4 @@
+import { describe, expect, test } from 'vitest'
 import { parseEmoji, configParseEmoji } from '../src/parser'
 
 describe('parseEmoji', function () {
@@ -14,8 +15,6 @@ describe('parseEmoji', function () {
     )
   })
   test('input sdfasdfa should return sdfasdfa', () => {
-    expect(parseEmoji('sdfasdfa')).toBe(
-      'sdfasdfa',
-    )
+    expect(parseEmoji('sdfasdfa')).toBe('sdfasdfa')
   })
 })

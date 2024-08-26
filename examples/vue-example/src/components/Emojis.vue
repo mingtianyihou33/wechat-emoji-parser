@@ -8,6 +8,7 @@
             :title="emoji.cn"
             :style="emoji.style"
             @click="selectEmoji(emoji.cn)"
+            href="javascript:void(0);"
           ></a>
         </template>
       </div>
@@ -23,11 +24,7 @@
 </template>
 
 <script setup>
-import {
-  getEmojis,
-  parseEmoji,
-  configParseEmoji,
-} from '../../../../dist/emoji-parser.esm'
+import { getEmojis, parseEmoji, configParseEmoji } from '../../../../dist/index'
 import { reactive, ref } from 'vue'
 
 const emojis = reactive(getEmojis({ size: 50 }))

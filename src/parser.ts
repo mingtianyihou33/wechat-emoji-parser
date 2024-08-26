@@ -1,7 +1,7 @@
 import Trie from './utils/trie'
 import { EMOJI_KEY_POSITION, EMOJI_PANEL } from './config/emoji'
 import { stringSplice } from './utils/uitl'
-
+import emojiSprite from './assets/emoji-sprite.png'
 const emojiKeys = Object.keys(EMOJI_KEY_POSITION)
 const trie = new Trie(emojiKeys)
 
@@ -65,8 +65,7 @@ export function transform2Html(
 const defaultEmojiOption: EmojiParserOption = {
   size: 64,
   tag: 'a',
-  emojiSpriteUrl:
-    'https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png',
+  emojiSpriteUrl: emojiSprite,
 }
 
 export function parseEmoji(str: string): string {

@@ -1,7 +1,18 @@
+
 node_modules
 
 dist
+public/env
 tsconfig.json
 yarn.lock
 package.lock
 .idea
+pnpm-lock.yaml
+enpm-lock.yaml
+auto-imports.d.ts
+components.d.ts
+.local
+/node_modules/**
+
+**/*.svg
+**/*.sh

@@ -1,3 +1,4 @@
+import { describe, expect, test } from 'vitest'
 import { getEmojisByEmojiData, getEmojis } from '../src/emoji'
 
 describe('emoji', function () {

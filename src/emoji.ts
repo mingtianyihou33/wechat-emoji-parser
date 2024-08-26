@@ -1,12 +1,11 @@
 import { EMOJI_DATA } from './config/emoji'
 import { getEmojiStyle } from './parser'
-
+import emojiSprite from './assets/emoji-sprite.png'
 export function getEmojisByEmojiData(emojiData: EmojiData[]) {
   return function (option: EmojiParserOption | undefined): Emoji[] {
     let emojiOption: EmojiParserOption = {
       size: 64,
-      emojiSpriteUrl:
-        'https://res.wx.qq.com/wxdoc/dist/assets/img/emoji-sprite.b5bd1fe0.png',
+      emojiSpriteUrl: emojiSprite,
     }
     if (option) {
       emojiOption = Object.assign(emojiOption, option)

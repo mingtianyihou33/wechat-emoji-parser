@@ -1,25 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "esnext",
+    "module": "ES6",
+    "target": "es2019",
+    "sourceMap": false,
+    "declaration": true,
+    "outDir": "./dist",
     "moduleResolution": "node",
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true,
-    "strictFunctionTypes": false,
-    "jsx": "preserve",
-    "baseUrl": ".",
-    "allowJs": true,
-    "sourceMap": true,
+    "strictNullChecks": true,
     "esModuleInterop": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": false,
-    "experimentalDecorators": true,
-    "lib": ["dom", "esnext"],
-    "incremental": true,
-    "skipLibCheck": true
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true
   },
-  "plugins": [],
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules", "dist", "**/*.js"]
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*.ts"]
 }
