@@ -12,10 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - run: pnpm install
+      - uses: pnpm/action-setup@v4
+      - run: pnpm i
       - run: pnpm run test
       - run: pnpm run build
 
