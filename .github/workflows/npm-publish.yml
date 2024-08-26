@@ -26,21 +26,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          registry-url: https://registry.npmjs.org/
           cache: 'pnpm'
 
       - run: pnpm install
       - run: pnpm run test
       - run: pnpm run build
-
-  publish-npm:
-    needs: test-build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org/
       - run: cd dist && npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
