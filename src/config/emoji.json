@@ -1,0 +1,1143 @@
+[
+  {
+    "cn": "[微笑]",
+    "hk": "[微笑]",
+    "us": "[Smile]",
+    "code": "/::)",
+    "web_code": "/微笑",
+    "src": "/src/assets/emojis/Smile.png"
+  },
+  {
+    "cn": "[撇嘴]",
+    "hk": "[撇嘴]",
+    "us": "[Grimace]",
+    "code": "/::~",
+    "web_code": "/撇嘴",
+    "src": "/src/assets/emojis/Grimace.png"
+  },
+  {
+    "cn": "[色]",
+    "hk": "[色]",
+    "us": "[Drool]",
+    "code": "/::B",
+    "web_code": "/色",
+    "src": "/src/assets/emojis/Drool.png"
+  },
+  {
+    "cn": "[发呆]",
+    "hk": "[發呆]",
+    "us": "[Scowl]",
+    "code": "/::|",
+    "web_code": "/发呆",
+    "src": "/src/assets/emojis/Scowl.png"
+  },
+  {
+    "cn": "[得意]",
+    "hk": "[得意]",
+    "us": "[CoolGuy]",
+    "code": "/:8-)",
+    "web_code": "/得意",
+    "src": "/src/assets/emojis/CoolGuy.png"
+  },
+  {
+    "cn": "[流泪]",
+    "hk": "[流淚]",
+    "us": "[Sob]",
+    "code": "/::<",
+    "web_code": "/流泪",
+    "src": "/src/assets/emojis/Sob.png"
+  },
+  {
+    "cn": "[害羞]",
+    "hk": "[害羞]",
+    "us": "[Shy]",
+    "code": "/::$",
+    "web_code": "/害羞",
+    "src": "/src/assets/emojis/Shy.png"
+  },
+  {
+    "cn": "[闭嘴]",
+    "hk": "[閉嘴]",
+    "us": "[Silent]",
+    "code": "/::X",
+    "web_code": "/闭嘴",
+    "src": "/src/assets/emojis/Silent.png"
+  },
+  {
+    "cn": "[睡]",
+    "hk": "[睡]",
+    "us": "[Sleep]",
+    "code": "/::Z",
+    "web_code": "/睡",
+    "src": "/src/assets/emojis/Sleep.png"
+  },
+  {
+    "cn": "[大哭]",
+    "hk": "[大哭]",
+    "us": "[Cry]",
+    "code": "/::'(",
+    "web_code": "/大哭",
+    "src": "/src/assets/emojis/Cry.png"
+  },
+  {
+    "cn": "[尴尬]",
+    "hk": "[尷尬]",
+    "us": "[Awkward]",
+    "code": "/::-|",
+    "web_code": "/尴尬",
+    "src": "/src/assets/emojis/Awkward.png"
+  },
+  {
+    "cn": "[发怒]",
+    "hk": "[發怒]",
+    "us": "[Angry]",
+    "code": "/::@",
+    "web_code": "/发怒",
+    "src": "/src/assets/emojis/Angry.png"
+  },
+  {
+    "cn": "[调皮]",
+    "hk": "[調皮]",
+    "us": "[Tongue]",
+    "code": "/::P",
+    "web_code": "/调皮",
+    "src": "/src/assets/emojis/Tongue.png"
+  },
+  {
+    "cn": "[呲牙]",
+    "hk": "[呲牙]",
+    "us": "[Grin]",
+    "code": "/::D",
+    "web_code": "/呲牙",
+    "src": "/src/assets/emojis/Grin.png"
+  },
+  {
+    "cn": "[惊讶]",
+    "hk": "[驚訝]",
+    "us": "[Surprise]",
+    "code": "/::O",
+    "web_code": "/惊讶",
+    "src": "/src/assets/emojis/Surprise.png"
+  },
+  {
+    "cn": "[难过]",
+    "hk": "[難過]",
+    "us": "[Frown]",
+    "code": "/::(",
+    "web_code": "/难过",
+    "src": "/src/assets/emojis/Frown.png"
+  },
+  {
+    "cn": "[酷]",
+    "hk": "[酷]",
+    "us": "[Ruthless]",
+    "code": "/::+",
+    "web_code": "/酷",
+    "src": "/src/assets/emojis/Ruthless.png"
+  },
+  {
+    "cn": "[囧]",
+    "hk": "[囧]",
+    "us": "[Blush]",
+    "code": "/:--b",
+    "web_code": "/冷汗",
+    "src": "/src/assets/emojis/Blush.png"
+  },
+  {
+    "cn": "[抓狂]",
+    "hk": "[抓狂]",
+    "us": "[Scream]",
+    "code": "/::Q",
+    "web_code": "/抓狂",
+    "src": "/src/assets/emojis/Scream.png"
+  },
+  {
+    "cn": "[吐]",
+    "hk": "[吐]",
+    "us": "[Puke]",
+    "code": "/::T",
+    "web_code": "/吐",
+    "src": "/src/assets/emojis/Puke.png"
+  },
+  {
+    "cn": "[偷笑]",
+    "hk": "[偷笑]",
+    "us": "[Chuckle]",
+    "code": "/:,@P",
+    "web_code": "/偷笑",
+    "src": "/src/assets/emojis/Chuckle.png"
+  },
+  {
+    "cn": "[愉快]",
+    "hk": "[愉快]",
+    "us": "[Joyful]",
+    "code": "/:,@-D",
+    "web_code": "/可爱",
+    "src": "/src/assets/emojis/Joyful.png"
+  },
+  {
+    "cn": "[白眼]",
+    "hk": "[白眼]",
+    "us": "[Slight]",
+    "code": "/::d",
+    "web_code": "/白眼",
+    "src": "/src/assets/emojis/Slight.png"
+  },
+  {
+    "cn": "[傲慢]",
+    "hk": "[傲慢]",
+    "us": "[Smug]",
+    "code": "/:,@o",
+    "web_code": "/傲慢",
+    "src": "/src/assets/emojis/Smug.png"
+  },
+  {
+    "cn": "[饥饿]",
+    "hk": "[饑餓]",
+    "us": "[Hungry]",
+    "code": "/::g",
+    "web_code": "/饥饿",
+    "src": "/src/assets/emojis/Hungry.png"
+  },
+  {
+    "cn": "[困]",
+    "hk": "[累]",
+    "us": "[Drowsy]",
+    "code": "/:|-)",
+    "web_code": "/困",
+    "src": "/src/assets/emojis/Drowsy.png"
+  },
+  {
+    "cn": "[惊恐]",
+    "hk": "[驚恐]",
+    "us": "[Panic]",
+    "code": "/::!",
+    "web_code": "/惊恐",
+    "src": "/src/assets/emojis/Panic.png"
+  },
+  {
+    "cn": "[流汗]",
+    "hk": "[流汗]",
+    "us": "[Sweat]",
+    "code": "/::L",
+    "web_code": "/流汗",
+    "src": "/src/assets/emojis/Sweat.png"
+  },
+  {
+    "cn": "[憨笑]",
+    "hk": "[大笑]",
+    "us": "[Laugh]",
+    "code": "/::>",
+    "web_code": "/憨笑",
+    "src": "/src/assets/emojis/Laugh.png"
+  },
+  {
+    "cn": "[悠闲]",
+    "hk": "[悠閑]",
+    "us": "[Commando]",
+    "code": "/::,@",
+    "web_code": "/大兵",
+    "src": "/src/assets/emojis/Commando.png"
+  },
+  {
+    "cn": "[奋斗]",
+    "hk": "[奮鬥]",
+    "us": "[Determined]",
+    "code": "/:,@f",
+    "web_code": "/奋斗",
+    "src": "/src/assets/emojis/Determined.png"
+  },
+  {
+    "cn": "[咒骂]",
+    "hk": "[咒罵]",
+    "us": "[Scold]",
+    "code": "/::-S",
+    "web_code": "/咒骂",
+    "src": "/src/assets/emojis/Scold.png"
+  },
+  {
+    "cn": "[疑问]",
+    "hk": "[疑問]",
+    "us": "[Shocked]",
+    "code": "/:?",
+    "web_code": "/疑问",
+    "src": "/src/assets/emojis/Shocked.png"
+  },
+  {
+    "cn": "[嘘]",
+    "hk": "[噓]",
+    "us": "[Shhh]",
+    "code": "/:,@x",
+    "web_code": "/嘘",
+    "src": "/src/assets/emojis/Shhh.png"
+  },
+  {
+    "cn": "[晕]",
+    "hk": "[暈]",
+    "us": "[Dizzy]",
+    "code": "/:,@@",
+    "web_code": "/晕",
+    "src": "/src/assets/emojis/Dizzy.png"
+  },
+  {
+    "cn": "[疯了]",
+    "hk": "[瘋了]",
+    "us": "[Tormented]",
+    "code": "/::8",
+    "web_code": "/折磨",
+    "src": "/src/assets/emojis/Tormented.png"
+  },
+  {
+    "cn": "[衰]",
+    "hk": "[衰]",
+    "us": "[Toasted]",
+    "code": "/:,@!",
+    "web_code": "/衰",
+    "src": "/src/assets/emojis/Toasted.png"
+  },
+  {
+    "cn": "[骷髅]",
+    "hk": "[骷髏頭]",
+    "us": "[Skull]",
+    "code": "/:!!!",
+    "web_code": "/骷髅",
+    "src": "/src/assets/emojis/Skull.png"
+  },
+  {
+    "cn": "[敲打]",
+    "hk": "[敲打]",
+    "us": "[Hammer]",
+    "code": "/:xx",
+    "web_code": "/敲打",
+    "src": "/src/assets/emojis/Hammer.png"
+  },
+  {
+    "cn": "[再见]",
+    "hk": "[再見]",
+    "us": "[Wave]",
+    "code": "/:bye",
+    "web_code": "/再见",
+    "src": "/src/assets/emojis/Wave.png"
+  },
+  {
+    "cn": "[擦汗]",
+    "hk": "[擦汗]",
+    "us": "[Speechless]",
+    "code": "/:wipe",
+    "web_code": "/擦汗",
+    "src": "/src/assets/emojis/Speechless.png"
+  },
+  {
+    "cn": "[抠鼻]",
+    "hk": "[摳鼻]",
+    "us": "[NosePick]",
+    "code": "/:dig",
+    "web_code": "/抠鼻",
+    "src": "/src/assets/emojis/NosePick.png"
+  },
+  {
+    "cn": "[鼓掌]",
+    "hk": "[鼓掌]",
+    "us": "[Clap]",
+    "code": "/:handclap",
+    "web_code": "/鼓掌",
+    "src": "/src/assets/emojis/Clap.png"
+  },
+  {
+    "cn": "[糗大了]",
+    "hk": "[羞辱]",
+    "us": "[Shame]",
+    "code": "/:&-(",
+    "web_code": "/糗大了",
+    "src": "/src/assets/emojis/Shame.png"
+  },
+  {
+    "cn": "[坏笑]",
+    "hk": "[壞笑]",
+    "us": "[Trick]",
+    "code": "/:B-)",
+    "web_code": "/坏笑",
+    "src": "/src/assets/emojis/Trick.png"
+  },
+  {
+    "cn": "[左哼哼]",
+    "hk": "[左哼哼]",
+    "us": "[Bah！L]",
+    "code": "/:<@",
+    "web_code": "/左哼哼",
+    "src": "/src/assets/emojis/Bah！L.png"
+  },
+  {
+    "cn": "[右哼哼]",
+    "hk": "[右哼哼]",
+    "us": "[Bah！R]",
+    "code": "/:@>",
+    "web_code": "/右哼哼",
+    "src": "/src/assets/emojis/Bah！R.png"
+  },
+  {
+    "cn": "[哈欠]",
+    "hk": "[哈欠]",
+    "us": "[Yawn]",
+    "code": "/::-O",
+    "web_code": "/哈欠",
+    "src": "/src/assets/emojis/Yawn.png"
+  },
+  {
+    "cn": "[鄙视]",
+    "hk": "[鄙視]",
+    "us": "[Pooh-pooh]",
+    "code": "/:>-|",
+    "web_code": "/鄙视",
+    "src": "/src/assets/emojis/Pooh-pooh.png"
+  },
+  {
+    "cn": "[委屈]",
+    "hk": "[委屈]",
+    "us": "[Shrunken]",
+    "code": "/:P-(",
+    "web_code": "/委屈",
+    "src": "/src/assets/emojis/Shrunken.png"
+  },
+  {
+    "cn": "[快哭了]",
+    "hk": "[快哭了]",
+    "us": "[TearingUp]",
+    "code": "/::'|",
+    "web_code": "/快哭了",
+    "src": "/src/assets/emojis/TearingUp.png"
+  },
+  {
+    "cn": "[阴险]",
+    "hk": "[陰險]",
+    "us": "[Sly]",
+    "code": "/:X-)",
+    "web_code": "/阴险",
+    "src": "/src/assets/emojis/Sly.png"
+  },
+  {
+    "cn": "[亲亲]",
+    "hk": "[親親]",
+    "us": "[Kiss]",
+    "code": "/::*",
+    "web_code": "/亲亲",
+    "src": "/src/assets/emojis/Kiss.png"
+  },
+  {
+    "cn": "[吓]",
+    "hk": "[嚇]",
+    "us": "[Wrath]",
+    "code": "/:@x",
+    "web_code": "/吓",
+    "src": "/src/assets/emojis/Wrath.png"
+  },
+  {
+    "cn": "[可怜]",
+    "hk": "[可憐]",
+    "us": "[Whimper]",
+    "code": "/:8*",
+    "web_code": "/可怜",
+    "src": "/src/assets/emojis/Whimper.png"
+  },
+  {
+    "cn": "[菜刀]",
+    "hk": "[菜刀]",
+    "us": "[Cleaver]",
+    "code": "/:pd",
+    "web_code": "/菜刀",
+    "src": "/src/assets/emojis/Cleaver.png"
+  },
+  {
+    "cn": "[西瓜]",
+    "hk": "[西瓜]",
+    "us": "[Watermelon]",
+    "code": "/:<W>",
+    "web_code": "/西瓜",
+    "src": "/src/assets/emojis/Watermelon.png"
+  },
+  {
+    "cn": "[啤酒]",
+    "hk": "[啤酒]",
+    "us": "[Beer]",
+    "code": "/:beer",
+    "web_code": "/啤酒",
+    "src": "/src/assets/emojis/Beer.png"
+  },
+  {
+    "cn": "[篮球]",
+    "hk": "[籃球]",
+    "us": "[Basketball]",
+    "code": "/:basketb",
+    "web_code": "/篮球",
+    "src": "/src/assets/emojis/Basketball.png"
+  },
+  {
+    "cn": "[乒乓]",
+    "hk": "[乒乓]",
+    "us": "[PingPong]",
+    "code": "/:oo",
+    "web_code": "/乒乓",
+    "src": "/src/assets/emojis/PingPong.png"
+  },
+  {
+    "cn": "[咖啡]",
+    "hk": "[咖啡]",
+    "us": "[Coffee]",
+    "code": "/:coffee",
+    "web_code": "/咖啡",
+    "src": "/src/assets/emojis/Coffee.png"
+  },
+  {
+    "cn": "[饭]",
+    "hk": "[飯]",
+    "us": "[Rice]",
+    "code": "/:eat",
+    "web_code": "/饭",
+    "src": "/src/assets/emojis/Rice.png"
+  },
+  {
+    "cn": "[猪头]",
+    "hk": "[豬頭]",
+    "us": "[Pig]",
+    "code": "/:pig",
+    "web_code": "/猪头",
+    "src": "/src/assets/emojis/Pig.png"
+  },
+  {
+    "cn": "[玫瑰]",
+    "hk": "[玫瑰]",
+    "us": "[Rose]",
+    "code": "/:rose",
+    "web_code": "/玫瑰",
+    "src": "/src/assets/emojis/Rose.png"
+  },
+  {
+    "cn": "[凋谢]",
+    "hk": "[枯萎]",
+    "us": "[Wilt]",
+    "code": "/:fade",
+    "web_code": "/凋谢",
+    "src": "/src/assets/emojis/Wilt.png"
+  },
+  {
+    "cn": "[嘴唇]",
+    "hk": "[嘴唇]",
+    "us": "[Lips]",
+    "code": "/:showlove",
+    "web_code": "/示爱",
+    "src": "/src/assets/emojis/Lips.png"
+  },
+  {
+    "cn": "[爱心]",
+    "hk": "[愛心]",
+    "us": "[Heart]",
+    "code": "/:heart",
+    "web_code": "/爱心",
+    "src": "/src/assets/emojis/Heart.png"
+  },
+  {
+    "cn": "[心碎]",
+    "hk": "[心碎]",
+    "us": "[BrokenHeart]",
+    "code": "/:break",
+    "web_code": "/心碎",
+    "src": "/src/assets/emojis/BrokenHeart.png"
+  },
+  {
+    "cn": "[蛋糕]",
+    "hk": "[蛋糕]",
+    "us": "[Cake]",
+    "code": "/:cake",
+    "web_code": "/蛋糕",
+    "src": "/src/assets/emojis/Cake.png"
+  },
+  {
+    "cn": "[闪电]",
+    "hk": "[閃電]",
+    "us": "[Lightning]",
+    "code": "/:li",
+    "web_code": "/闪电",
+    "src": "/src/assets/emojis/Lightning.png"
+  },
+  {
+    "cn": "[炸弹]",
+    "hk": "[炸彈]",
+    "us": "[Bomb]",
+    "code": "/:bome",
+    "web_code": "/炸弹",
+    "src": "/src/assets/emojis/Bomb.png"
+  },
+  {
+    "cn": "[刀]",
+    "hk": "[刀]",
+    "us": "[Dagger]",
+    "code": "/:kn",
+    "web_code": "/刀",
+    "src": "/src/assets/emojis/Dagger.png"
+  },
+  {
+    "cn": "[足球]",
+    "hk": "[足球]",
+    "us": "[Soccer]",
+    "code": "/:footb",
+    "web_code": "/足球",
+    "src": "/src/assets/emojis/Soccer.png"
+  },
+  {
+    "cn": "[瓢虫]",
+    "hk": "[甲蟲]",
+    "us": "[Ladybug]",
+    "code": "/:ladybug",
+    "web_code": "/瓢虫",
+    "src": "/src/assets/emojis/Ladybug.png"
+  },
+  {
+    "cn": "[便便]",
+    "hk": "[便便]",
+    "us": "[Poop]",
+    "code": "/:shit",
+    "web_code": "/便便",
+    "src": "/src/assets/emojis/Poop.png"
+  },
+  {
+    "cn": "[月亮]",
+    "hk": "[月亮]",
+    "us": "[Moon]",
+    "code": "/:moon",
+    "web_code": "/月亮",
+    "src": "/src/assets/emojis/Moon.png"
+  },
+  {
+    "cn": "[太阳]",
+    "hk": "[太陽]",
+    "us": "[Sun]",
+    "code": "/:sun",
+    "web_code": "/太阳",
+    "src": "/src/assets/emojis/Sun.png"
+  },
+  {
+    "cn": "[礼物]",
+    "hk": "[禮物]",
+    "us": "[Gift]",
+    "code": "/:gift",
+    "web_code": "/礼物",
+    "src": "/src/assets/emojis/Gift.png"
+  },
+  {
+    "cn": "[拥抱]",
+    "hk": "[擁抱]",
+    "us": "[Hug]",
+    "code": "/:hug",
+    "web_code": "/拥抱",
+    "src": "/src/assets/emojis/Hug.png"
+  },
+  {
+    "cn": "[强]",
+    "hk": "[強]",
+    "us": "[ThumbsUp]",
+    "code": "/:strong",
+    "web_code": "/强",
+    "src": "/src/assets/emojis/ThumbsUp.png"
+  },
+  {
+    "cn": "[弱]",
+    "hk": "[弱]",
+    "us": "[ThumbsDown]",
+    "code": "/:weak",
+    "web_code": "/弱",
+    "src": "/src/assets/emojis/ThumbsDown.png"
+  },
+  {
+    "cn": "[握手]",
+    "hk": "[握手]",
+    "us": "[Shake]",
+    "code": "/:share",
+    "web_code": "/握手",
+    "src": "/src/assets/emojis/Shake.png"
+  },
+  {
+    "cn": "[胜利]",
+    "hk": "[勝利]",
+    "us": "[Peace]",
+    "code": "/:v",
+    "web_code": "/胜利",
+    "src": "/src/assets/emojis/Peace.png"
+  },
+  {
+    "cn": "[抱拳]",
+    "hk": "[抱拳]",
+    "us": "[Fight]",
+    "code": "/:@)",
+    "web_code": "/抱拳",
+    "src": "/src/assets/emojis/Fight.png"
+  },
+  {
+    "cn": "[勾引]",
+    "hk": "[勾引]",
+    "us": "[Beckon]",
+    "code": "/:jj",
+    "web_code": "/勾引",
+    "src": "/src/assets/emojis/Beckon.png"
+  },
+  {
+    "cn": "[拳头]",
+    "hk": "[拳頭]",
+    "us": "[Fist]",
+    "code": "/:@@",
+    "web_code": "/拳头",
+    "src": "/src/assets/emojis/Fist.png"
+  },
+  {
+    "cn": "[差劲]",
+    "hk": "[差勁]",
+    "us": "[Pinky]",
+    "code": "/:bad",
+    "web_code": "/差劲",
+    "src": "/src/assets/emojis/Pinky.png"
+  },
+  {
+    "cn": "[爱你]",
+    "hk": "[愛你]",
+    "us": "[RockOn]",
+    "code": "/:lvu",
+    "web_code": "/爱你",
+    "src": "/src/assets/emojis/RockOn.png"
+  },
+  {
+    "cn": "[NO]",
+    "hk": "[NO]",
+    "us": "[Nuh-uh]",
+    "code": "/:no",
+    "web_code": "/NO",
+    "src": "/src/assets/emojis/Nuh-uh.png"
+  },
+  {
+    "cn": "[OK]",
+    "hk": "[OK]",
+    "us": "[OK]",
+    "code": "/:ok",
+    "web_code": "/OK",
+    "src": "/src/assets/emojis/OK.png"
+  },
+  {
+    "cn": "[爱情]",
+    "hk": "[愛情]",
+    "us": "[InLove]",
+    "code": "/:love",
+    "web_code": "/爱情",
+    "src": "/src/assets/emojis/InLove.png"
+  },
+  {
+    "cn": "[飞吻]",
+    "hk": "[飛吻]",
+    "us": "[Blowkiss]",
+    "code": "/:<L>",
+    "web_code": "/飞吻",
+    "src": "/src/assets/emojis/Blowkiss.png"
+  },
+  {
+    "cn": "[跳跳]",
+    "hk": "[跳跳]",
+    "us": "[Waddle]",
+    "code": "/:jump",
+    "web_code": "/跳跳",
+    "src": "/src/assets/emojis/Waddle.png"
+  },
+  {
+    "cn": "[发抖]",
+    "hk": "[發抖]",
+    "us": "[Tremble]",
+    "code": "/:shake",
+    "web_code": "/发抖",
+    "src": "/src/assets/emojis/Tremble.png"
+  },
+  {
+    "cn": "[怄火]",
+    "hk": "[噴火]",
+    "us": "[Aaagh!]",
+    "code": "/:<O>",
+    "web_code": "/怄火",
+    "src": "/src/assets/emojis/Aaagh!.png"
+  },
+  {
+    "cn": "[转圈]",
+    "hk": "[轉圈]",
+    "us": "[Twirl]",
+    "code": "/:circle",
+    "web_code": "/转圈",
+    "src": "/src/assets/emojis/Twirl.png"
+  },
+  {
+    "cn": "[磕头]",
+    "hk": "[磕頭]",
+    "us": "[Kotow]",
+    "code": "/:kotow",
+    "web_code": "/磕头",
+    "src": "/src/assets/emojis/Kotow.png"
+  },
+  {
+    "cn": "[回头]",
+    "hk": "[回頭]",
+    "us": "[Dramatic]",
+    "code": "/:turn",
+    "web_code": "/回头",
+    "src": "/src/assets/emojis/Dramatic.png"
+  },
+  {
+    "cn": "[跳绳]",
+    "hk": "[跳繩]",
+    "us": "[JumpRope]",
+    "code": "/:skip",
+    "web_code": "/跳绳",
+    "src": "/src/assets/emojis/JumpRope.png"
+  },
+  {
+    "cn": "[投降]",
+    "hk": "[投降]",
+    "us": "[Surrender]",
+    "code": "/:oY",
+    "web_code": "/挥手",
+    "src": "/src/assets/emojis/Surrender.png"
+  },
+  {
+    "cn": "[激动]",
+    "hk": "[激動]",
+    "us": "[Hooray]",
+    "code": "/:#-0",
+    "web_code": "/激动",
+    "src": "/src/assets/emojis/Hooray.png"
+  },
+  {
+    "cn": "[乱舞]",
+    "hk": "[亂舞]",
+    "us": "[Meditate]",
+    "code": "/:hiphot",
+    "web_code": "/街舞",
+    "src": "/src/assets/emojis/Meditate.png"
+  },
+  {
+    "cn": "[献吻]",
+    "hk": "[獻吻]",
+    "us": "[Smooch]",
+    "code": "/:kiss",
+    "web_code": "/献吻",
+    "src": "/src/assets/emojis/Smooch.png"
+  },
+  {
+    "cn": "[左太极]",
+    "hk": "[左太極]",
+    "us": "[TaiChi L]",
+    "code": "/:<&",
+    "web_code": "/左太极",
+    "src": "/src/assets/emojis/TaiChi L.png"
+  },
+  {
+    "cn": "[右太极]",
+    "hk": "[右太極]",
+    "us": "[TaiChi R]",
+    "code": "/:&\"",
+    "web_code": "/右太极",
+    "src": "/src/assets/emojis/TaiChi R.png"
+  },
+  {
+    "cn": "[奸笑]",
+    "hk": "[奸笑]",
+    "us": "[Smirk]",
+    "code": "[Smirk]",
+    "src": "/src/assets/emojis/Smirk.png"
+  },
+  {
+    "cn": "[嘿哈]",
+    "hk": "[吼嘿]",
+    "us": "[Hey]",
+    "code": "[Hey]",
+    "src": "/src/assets/emojis/Hey.png"
+  },
+  {
+    "cn": "[捂脸]",
+    "hk": "[掩面]",
+    "us": "[Facepalm]",
+    "code": "[Facepalm]",
+    "src": "/src/assets/emojis/Facepalm.png"
+  },
+  {
+    "cn": "[机智]",
+    "hk": "[機智]",
+    "us": "[Smart]",
+    "code": "[Smart]",
+    "src": "/src/assets/emojis/Smart.png"
+  },
+  {
+    "cn": "[茶]",
+    "hk": "[茶]",
+    "us": "[Tea]",
+    "code": "[Tea]",
+    "src": "/src/assets/emojis/Tea.png"
+  },
+  {
+    "cn": "[红包]",
+    "hk": "[Packet]",
+    "us": "[Packet]",
+    "code": "[Packet]",
+    "src": "/src/assets/emojis/Packet.png"
+  },
+  {
+    "cn": "[蜡烛]",
+    "hk": "[蠟燭]",
+    "us": "[Candle]",
+    "code": "[Candle]",
+    "src": "/src/assets/emojis/Candle.png"
+  },
+  {
+    "cn": "[耶]",
+    "hk": "[歐耶]",
+    "us": "[Yeah!]",
+    "code": "[Yeah!]",
+    "src": "/src/assets/emojis/Yeah!.png"
+  },
+  {
+    "cn": "[皱眉]",
+    "hk": "[皺眉]",
+    "us": "[Concerned]",
+    "code": "[Concerned]",
+    "src": "/src/assets/emojis/Concerned.png"
+  },
+  {
+    "cn": "[抱拳]",
+    "hk": "[抱拳]",
+    "us": "[Salute]",
+    "code": "[Salute]",
+    "src": "/src/assets/emojis/Salute.png"
+  },
+  {
+    "cn": "[鸡]",
+    "hk": "[小雞]",
+    "us": "[Chick]",
+    "code": "[Chick]",
+    "src": "/src/assets/emojis/Chick.png"
+  },
+  {
+    "cn": "[福]",
+    "hk": "[福]",
+    "us": "[Blessing]",
+    "code": "[Blessing]",
+    "src": "/src/assets/emojis/Blessing.png"
+  },
+  {
+    "cn": "[再见]",
+    "hk": "[再見]",
+    "us": "[Bye]",
+    "code": "[Bye]",
+    "src": "/src/assets/emojis/Bye.png"
+  },
+  {
+    "cn": "[發]",
+    "hk": "[發]",
+    "us": "[Rich]",
+    "code": "[Rich]",
+    "src": "/src/assets/emojis/Rich.png"
+  },
+  {
+    "cn": "[小狗]",
+    "hk": "[小狗]",
+    "us": "[Pup]",
+    "code": "[Pup]",
+    "src": "/src/assets/emojis/Pup.png"
+  },
+  {
+    "cn": "[吃瓜]",
+    "hk": "[吃西瓜]",
+    "us": "[Onlooker]",
+    "code": "[Onlooker]",
+    "src": "/src/assets/emojis/Onlooker.png"
+  },
+  {
+    "cn": "[加油]",
+    "hk": "[加油]",
+    "us": "[GoForIt]",
+    "code": "[GoForIt]",
+    "src": "/src/assets/emojis/GoForIt.png"
+  },
+  {
+    "cn": "[汗]",
+    "hk": "[汗]",
+    "us": "[Sweats]",
+    "code": "[Sweats]",
+    "src": "/src/assets/emojis/Sweats.png"
+  },
+  {
+    "cn": "[天啊]",
+    "hk": "[天啊]",
+    "us": "[OMG]",
+    "code": "[OMG]",
+    "src": "/src/assets/emojis/OMG.png"
+  },
+  {
+    "cn": "[Emm]",
+    "hk": "[一言難盡]",
+    "us": "[Emm]",
+    "code": "[Emm]",
+    "src": "/src/assets/emojis/Emm.png"
+  },
+  {
+    "cn": "[社会社会]",
+    "hk": "[失敬失敬]",
+    "us": "[Respect]",
+    "code": "[Respect]",
+    "src": "/src/assets/emojis/Respect.png"
+  },
+  {
+    "cn": "[旺柴]",
+    "hk": "[旺柴]",
+    "us": "[Doge]",
+    "code": "[Doge]",
+    "src": "/src/assets/emojis/Doge.png"
+  },
+  {
+    "cn": "[好的]",
+    "hk": "[好的]",
+    "us": "[NoProb]",
+    "code": "[NoProb]",
+    "src": "/src/assets/emojis/NoProb.png"
+  },
+  {
+    "cn": "[打脸]",
+    "hk": "[打臉]",
+    "us": "[MyBad]",
+    "code": "[MyBad]",
+    "src": "/src/assets/emojis/MyBad.png"
+  },
+  {
+    "cn": "[哇]",
+    "hk": "[哇]",
+    "us": "[Wow]",
+    "code": "[Wow]",
+    "src": "/src/assets/emojis/Wow.png"
+  },
+  {
+    "cn": "[加油加油]",
+    "hk": "[加油！]",
+    "us": "[KeepFighting]",
+    "code": "[KeepFighting]",
+    "src": "/src/assets/emojis/KeepFighting.png"
+  },
+  {
+    "cn": "[翻白眼]",
+    "hk": "[翻白眼]",
+    "us": "[Boring]",
+    "code": "[Boring]",
+    "src": "/src/assets/emojis/Boring.png"
+  },
+  {
+    "cn": "[666]",
+    "hk": "[666]",
+    "us": "[Awesome]",
+    "code": "[666]",
+    "src": "/src/assets/emojis/Awesome.png"
+  },
+  {
+    "cn": "[让我看看]",
+    "hk": "[讓我看看]",
+    "us": "[LetMeSee]",
+    "code": "[LetMeSee]",
+    "src": "/src/assets/emojis/LetMeSee.png"
+  },
+  {
+    "cn": "[叹气]",
+    "hk": "[嘆息]",
+    "us": "[Sigh]",
+    "code": "[Sigh]",
+    "src": "/src/assets/emojis/Sigh.png"
+  },
+  {
+    "cn": "[苦涩]",
+    "hk": "[難受]",
+    "us": "[Hurt]",
+    "code": "[Hurt]",
+    "src": "/src/assets/emojis/Hurt.png"
+  },
+  {
+    "cn": "[裂开]",
+    "hk": "[崩潰]",
+    "us": "[Broken]",
+    "code": "[Broken]",
+    "src": "/src/assets/emojis/Broken.png"
+  },
+  {
+    "cn": "[脸红]",
+    "hk": "[臉紅]",
+    "us": "[Flushed]",
+    "code": "[Flushed]",
+    "src": "/src/assets/emojis/Flushed.png"
+  },
+  {
+    "cn": "[笑脸]",
+    "hk": "[笑臉]",
+    "us": "[Happy]",
+    "code": "[Happy]",
+    "src": "/src/assets/emojis/Happy.png"
+  },
+  {
+    "cn": "[破涕为笑]",
+    "hk": "[破涕為笑]",
+    "us": "[Lol]",
+    "code": "[Lol]",
+    "src": "/src/assets/emojis/Lol.png"
+  },
+  {
+    "cn": "[烟花]",
+    "hk": "[煙花]",
+    "us": "[Fireworks]",
+    "code": "[Fireworks]",
+    "src": "/src/assets/emojis/Fireworks.png"
+  },
+  {
+    "cn": "[爆竹]",
+    "hk": "[爆竹]",
+    "us": "[Firecracker]",
+    "code": "[Firecracker]",
+    "src": "/src/assets/emojis/Firecracker.png"
+  },
+  {
+    "cn": "[庆祝]",
+    "hk": "[慶祝]",
+    "us": "[Party]",
+    "code": "[Party]",
+    "src": "/src/assets/emojis/Party.png"
+  },
+  {
+    "cn": "[恐惧]",
+    "hk": "[恐懼]",
+    "us": "[Terror]",
+    "code": "[Terror]",
+    "src": "/src/assets/emojis/Terror.png"
+  },
+  {
+    "cn": "[无语]",
+    "hk": "[無語]",
+    "us": "[Duh]",
+    "code": "[Duh]",
+    "src": "/src/assets/emojis/Duh.png"
+  },
+  {
+    "cn": "[失望]",
+    "hk": "[失望]",
+    "us": "[Let Down]",
+    "code": "[LetDown]",
+    "src": "/src/assets/emojis/Let Down.png"
+  },
+  {
+    "cn": "[生病]",
+    "hk": "[生病]",
+    "us": "[Sick]",
+    "code": "[Sick]",
+    "src": "/src/assets/emojis/Sick.png"
+  },
+  {
+    "cn": "[合十]",
+    "hk": "[合十]",
+    "us": "[Worship]",
+    "code": "[Worship]",
+    "src": "/src/assets/emojis/Worship.png"
+  }
+]

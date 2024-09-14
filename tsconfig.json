@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "ES6",
+    "module": "ESNext",
     "target": "es2019",
     "sourceMap": false,
     "declaration": true,

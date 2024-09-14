@@ -10,13 +10,13 @@
 npm:
 
 ```bash
-npm install wechat-emoji-parser -S
+npm install wechat-emoji-parser
 ```
 
-yarn:
+pnpm:
 
 ```bash
-yarn add wechat-emoji-parser
+pnpm add wechat-emoji-parser
 ```
 
 ## How to use（使用）
@@ -32,39 +32,38 @@ let emojis = getEmojis({ size: 24 })
     cn: "[右哼哼]"
     code: "/:@>"
     style:{
-            background: "url(...) no-repeat"
-            background-position: "0px 0px"
-            background-size: "599.7px"
-            display: "inline-block"
-            height: "50px"
-            width: "50px"
+      background: "url(...) no-repeat"
+      background-size: "24px"
+      display: "inline-block"
+      height: "24px"
+      width: "24px"
 	}
 ....
 ]
 */
 ```
 
-1. 输入：option: {size: number, emojiSpriteUrl: string}
+1. 输入：option: {size: number}
 
    | 属性名         | 类型   | 默认值                                                                | 说明                                                                                                                 |
    | -------------- | ------ | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
    | size           | number | 64                                                                    | emoji 大小，单位 px                                                                                                  |
-   | emojiSpriteUrl | string | ./src/assets/emoji-sprite.png |  |
 
-2. 输出 emojis: [
+2. 输出 emojis: 
+```js
+[
    {
    code: string,
    cn: string,
    style: {
-   ​ display: string
-   ​ background: string
-   ​ width: string
-   ​ height: string
-   ​ 'background-position': string
-   ​ 'background-size': string
+     display: string,
+     background: string,
+     width: string,
+     height: string,
+     'background-size': string,
    }
-
 }]
+```
 
 | 属性名 | 类型   | 默认值 | 说明                       |
 | ------ | ------ | ------ | -------------------------- |
@@ -85,7 +84,6 @@ const res = parseEmoji('哈哈[西瓜]') // 解析文本
   | 属性名         | 类型   | 默认值                                                                | 说明                                                                                                                 |
   | -------------- | ------ | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
   | size           | number | 64                                                                    | emoji 大小，单位 px                                                                                                  |
-  | emojiSpriteUrl | string | ./src/assets/emoji-sprite.png |  |
   | tag            | string | 'a'                                                                   | 解析后的 html 标签                                                                                                   |
 
 - parseEmoji(str: string)
@@ -97,3 +95,10 @@ const res = parseEmoji('哈哈[西瓜]') // 解析文本
 ### example
 
 - [vue 项目使用案例](./examples/vue-example)
+
+
+### Contribution（贡献）
+1. 添加表情
+在src/assets/emojis里面加上表情图片
+2. 添加表情配置
+然后在emoji.json里面加上表情的编码规则，src字段对应表情图片的位置
