@@ -92,12 +92,12 @@ const res = parseEmoji('哈哈[西瓜]') // 解析文本
 
   输出：解析后的内容
 
-### example
+## Example
 
 - [vue 项目使用案例](./examples/vue-example)
 
 
-### Contribution（贡献）
+## Contribution（贡献）
 1. 添加表情
 在src/assets/emojis里面加上表情图片
 2. 添加表情配置
