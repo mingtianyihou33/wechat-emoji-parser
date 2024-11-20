@@ -1,6 +1,6 @@
 {
   "name": "wechat-emoji-parser",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "微信表情",
   "keywords": [
     "微信",
@@ -20,7 +20,10 @@
     "prepare": "husky install && node scripts/huskyHooks.js"
   },
   "main": "dist/index.js",
-  "repository": "https://github.com/mingtianyihou33/wechat-emoji-parser.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mingtianyihou33/wechat-emoji-parser.git"
+  },
   "author": "mingtianyihou33 <liumingyi1428@126.com>",
   "license": "MIT",
   "devDependencies": {
